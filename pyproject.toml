@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "backup-yt"
+version = "0.1.0"
+description = "Full backup tool for YouTube channels: videos, thumbnails, metadata and subtitles, powered by yt-dlp."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Iván Gómez" }
+]
+keywords = ["youtube", "yt-dlp", "backup", "downloader", "archive"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Multimedia :: Video",
+    "Topic :: System :: Archiving :: Backup",
+]
+dependencies = [
+    "yt-dlp",
+]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_GITHUB_USERNAME/backup-yt"
+Issues = "https://github.com/YOUR_GITHUB_USERNAME/backup-yt/issues"
+
+[project.scripts]
+backup-yt = "backup_yt.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["backup_yt*"]

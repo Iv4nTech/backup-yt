@@ -1,0 +1,25 @@
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+
+# Downloaded backup data (generated at runtime, not source code)
+youtube_backup/
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+
+# Internal notes, not part of the published project
+docs/
