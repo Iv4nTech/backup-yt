@@ -10,7 +10,7 @@ permissions:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
-    environment: pypi  # requires manual approval before this job runs, configured in GitHub repo settings
+    environment: testpypi  # temporary: dedicated environment for TestPyPI trial runs
     steps:
       - uses: actions/checkout@v4
 
@@ -25,5 +25,7 @@ jobs:
       - name: Build sdist and wheel
         run: python -m build
 
-      - name: Publish to PyPI
+      - name: Publish to TestPyPI
         uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          repository-url: https://test.pypi.org/legacy/
