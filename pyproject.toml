@@ -25,8 +25,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/YOUR_GITHUB_USERNAME/backup-yt"
-Issues = "https://github.com/YOUR_GITHUB_USERNAME/backup-yt/issues"
+Homepage = "https://github.com/Iv4nTech/backup-yt"
+Issues = "https://github.com/Iv4nTech/backup-yt/issues"
 
 [project.scripts]
 backup-yt = "backup_yt.cli:main"
