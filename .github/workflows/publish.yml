@@ -10,7 +10,7 @@ permissions:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
-    environment: testpypi  # temporary: dedicated environment for TestPyPI trial runs
+    environment: pypi  # temporary: dedicated environment for TestPyPI trial runs
     steps:
       - uses: actions/checkout@v4
 
